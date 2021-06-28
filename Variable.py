@@ -7,6 +7,8 @@
 #2. It can not have any special characters expecte underscore
 #3. variables name cant have an space in between
 #4. it can never start with a number 
+#5. Variable name cant be a keyword
+
 
 Fname = "Nisarg"
 
