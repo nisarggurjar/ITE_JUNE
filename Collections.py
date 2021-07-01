@@ -5,3 +5,8 @@
 #3. Dictionary (very imp for web) ===> Very Similarly to JSON
 #4. Set
 
+# in collections we can store hetrogeneous type of data and data is stored dynamically
+
+
+
+# In C/C++ ---> Array (Data Homogenous Type and data is stored sequentially [memory allocate]---> absurd)
