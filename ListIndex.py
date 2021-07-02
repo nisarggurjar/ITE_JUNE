@@ -1,3 +1,5 @@
+# Accessing List Of Items
+
 li = ["a", 'b', 'c', 'd', 'e', 'f', 'g']
 
 # index
