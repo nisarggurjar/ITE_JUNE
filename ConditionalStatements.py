@@ -35,10 +35,10 @@ else:
 # condition 1 : age >= 16 if gender is female
 # condition 2 : age >= 18 if gender is male 
 
-#age = int(input("Enter your age: "))
-#gender = input("Enter your gender: ")  # f for females and m for males
+age = int(input("Enter your age: "))
+gender = input("Enter your gender: ")  # f for females and m for males
 
-'''
+
 if age >= 16:
     if gender == 'f':
         print("Eligible for vote")
@@ -50,7 +50,7 @@ elif age >= 18 and (gender == 'm' or gender == 'f'):
     print("Eligible for vote")
 else:
     print("Not eligible for vote")
-'''
+
 
 '''
 if age>=16 and gender == 'f':
