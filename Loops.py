@@ -91,8 +91,8 @@ for x in range(2,num):  # condition 1,2,4 is checked
     if num%x == 0:
         print("Not a prime number")
         break
-    else:
-        print("Prime Number")
+else:
+    print("prime number")
 
 '''
 #### pass, continue and break
@@ -134,3 +134,85 @@ for x in range(1,15):
 
 '''
 '''
+
+
+'''
+Q. from a given list of random element (elements can be a string, int, float) we have to seprate them in diffrent lists?
+
+let li = [1,5,4, "Humera", 4.5 8.7 , 4,  5, "Rachit"]
+
+liStr = ["Humera", "Rachit"]
+liInt = [1,5,4,4,5]
+liFloat = [4.5, 8.7]
+'''
+
+
+## for else  ---> the else block, will operate only if loop is terminated normally 
+
+# normal termination of loop means loop is fully executed and there is no break applied in between
+# abnormal termination --> whenever loop ends due to any abnormal conditions such as break statement
+
+li = {1,5,4, "Humera", 4.5, 8.7 , 4,  5, "Rachit"}
+for i in li:
+    print(i)
+
+
+s = "I am a python developer"
+for i in s:
+    print(i)
+
+#Q. iterate through dictionary
+
+
+
+############################
+######### While ############
+############################
+i = 1
+while i<15:
+    print(i)
+    i+=1
+print("---------------------------")
+li = [1,5,4, "Humera", 4.5, 8.7 , 4,  5, "Rachit"]
+
+#while True:
+#    print("Hy")
+i = 0
+while i<len(li):
+    print(li[i])
+    i+=1    # i = i + 1
+
+ch = 'y'
+
+while ch == 'y':
+    print("program is running")
+    ch = input("Do you want to continue? (press y for yes)")
+
+
+# WAP a program for a basic calculator
+
+ch = 'y'
+
+while ch == 'y' or ch == 'Y':
+    num1 = int(input("Enter First Number"))
+    num2 = int(input("Enter Second Number"))
+
+    op = input("Enter the operator you want to use")
+
+    if op == '+':
+        print(num1 + num2)
+    elif op == '-':
+        print(num1 - num2)
+    elif op == '*':
+        print(num1 * num2)
+    elif op == '/':
+        print(num1 / num2)
+    else:
+        print("Invalid operator")
+
+    ch = input("Do you want to continue?")
+
+
+exp = input("Enter expression")
+print(eval(exp))
+
