@@ -1,0 +1,5 @@
+append, clear, copy, count, extend, index, insert, pop, remove, reverse, sort
+
+li = [1,2,8,7,6,4,4,3]
+
+Clear(li)
