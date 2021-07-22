@@ -27,4 +27,3 @@ print(c.roll)
 print(c.institue)
 
 
-print(institue)
