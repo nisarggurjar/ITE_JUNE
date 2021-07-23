@@ -3,41 +3,37 @@ class Player:
     def __init__(self, name):
         self.name = name
         self.life = 5
-    
+        self.points = 1000
+
     def Attack(self):
-        self.life-=1
+        if self.life == 0:
+            print("Game over")
+        else:
+            self.life-=1
+            self.points -= 20
 
     def Defence(self):
-        self.life+=1
+        if self.life >= 5:
+            print("Your life is already full")
+        elif self.life <= 0:
+            print("Game Over")
+        else:
+            self.life+=1
+            self.points +=15
 
     def CheckLife(self):
         print(self.life)
 
-p1 = Player("P1")
-p2 = Player("P2")
+class Store(Player):
 
-p1.Attack() #4
-p1.Attack() #3
-p1.Defence() #4
-p1.Attack() #3
-p1.Defence() #4
-p1.Defence() #5
-p1.Defence() #6
+    def BuyLife(self):
+        # 1 life = 20 points
+        # Life can never be more than 5
+        # Points should be checked here
+        pass
 
-
-p2.Attack() #4
-p2.Attack() #3
-p2.Attack() #2
-p2.Attack() #1
-p2.Defence() #2
-p2.Attack() #1
-p2.Attack() #0
-p2.Attack() #-1
-p2.Defence() #0
-p2.Attack() #-1
-p2.Defence() #0
-p2.Defence() #1
-
-
-p1.CheckLife()
-p2.CheckLife()
+    def SellLife(self):
+        # 1 life = 15 points
+        # You can not sell all of your lifes (you should always have minimum 1 life)
+        # Points should be checked here
+        pass
